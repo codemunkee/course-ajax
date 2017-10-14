@@ -10,7 +10,7 @@
         console.log(jsonResp['response']['docs']);
         for (const article of jsonResp['response']['docs']) {
             articles += `<article>
-                           <h1><a href="${article['web_url']}">${article['headline']['main']}</a></h1>
+                           <h1><a href="${article.web_url}">${article.headline.main}</a></h1>
                            <p>${article['snippet']}</p>
                          </article>`
         }
